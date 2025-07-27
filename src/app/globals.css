@@ -121,9 +121,7 @@
   }
 }
 
-html{
-  scroll-behavior: smooth;
-}
+
 .loader {
   border-color: white;
   border-top-color: transparent;
