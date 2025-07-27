@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { LucideLaptop, LucideBrain, LucideCode2, LucideLightbulb, LucideUserCircle2 } from "lucide-react";
+import { LucideLaptop, LucideBrain, LucideCode2, LucideLightbulb } from "lucide-react";
 import Image from "next/image";
 
 const traits = [
