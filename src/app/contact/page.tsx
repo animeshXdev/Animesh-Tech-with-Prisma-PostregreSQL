@@ -38,9 +38,7 @@ export default function ContactPage() {
       process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
     )
 
-    // 2. Save to DB via API Route
-    
-    if (!res.ok) throw new Error('Failed to save contact to DB')
+   
 
     toast.success('Message sent successfully!')
     reset()
