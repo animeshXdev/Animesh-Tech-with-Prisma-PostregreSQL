@@ -39,18 +39,13 @@ export default function ContactPage() {
     )
 
     // 2. Save to DB via API Route
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-
+    
     if (!res.ok) throw new Error('Failed to save contact to DB')
 
-    toast.success('Message sent & saved successfully!')
+    toast.success('Message sent successfully!')
     reset()
   } catch (error) {
-    toast.error('Failed to send or save message.')
+    toast.error('Failed to send message.')
     console.error(error)
   } finally {
     setLoading(false)
